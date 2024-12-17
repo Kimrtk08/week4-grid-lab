@@ -49,3 +49,30 @@ body {
   object-fit: cover;
   display: block;
 }
+
+/* สาหรับแท็บเล็ต */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .filter-btn {
+    flex: 0 1 calc(50% - 1rem);
+  }
+} /* สาหรับมือถือ */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .filter-btn {
+    flex: 1 1 100%;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
