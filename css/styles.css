@@ -1,0 +1,37 @@
+/* styles.css */
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header" "nav main sidebar" "footer footer footer";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  gap: 1rem;
+  padding: 1rem;
+}
+.header {
+  grid-area: header;
+  background: #2196f3;
+  padding: 1rem;
+  color: white;
+}
+.nav {
+  grid-area: nav;
+  background: #64b5f6;
+  padding: 1rem;
+}
+.main {
+  grid-area: main;
+  background: #bbdefb;
+  padding: 1rem;
+}
+.sidebar {
+  grid-area: sidebar;
+  background: #64b5f6;
+  padding: 1rem;
+}
+.footer {
+  grid-area: footer;
+  background: #2196f3;
+  padding: 1rem;
+  color: white;
+}
